@@ -1,8 +1,14 @@
-import { Button, styled } from "@mui/material";
+import { Box, Button, styled } from "@mui/material";
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import { DeleteForever } from '@mui/icons-material';
 import { theme } from "./theme";
+import Sidebar from "./components/Sidebar";
+import Rightbar from "./components/Rightbar";
+import Feed from "./components/Feed";
+import { Container, Stack } from "@mui/system";
+import { teal } from "@mui/material/colors";
+import Navbar from "./components/Navbar";
 
 
 function App() {
@@ -17,7 +23,17 @@ function App() {
 
   return (
     <div>
-      
+      <Box>
+        {/* navbar */}
+        <Navbar/>
+        <Stack direction="row" spacing={3} justifyContent="space-between" > 
+          <Sidebar />
+          <Feed />
+          <Rightbar />
+        </Stack>
+      </Box>
+
+
       {/* <BlueButton>Kill it</BlueButton> */}
     </div>
   )
