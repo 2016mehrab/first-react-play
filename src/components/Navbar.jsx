@@ -49,7 +49,7 @@ const Navbar = () => {
         <AppBar position="sticky">
             <StyledToolbar>
                 <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>StickyChan</Typography>
-                <DeblurIcon sx={{ display: { xs: "block", sm: "block" } }} />
+                <DeblurIcon sx={{ display: { xs: "block", sm: "none" } }} />
                 <Tearch><InputBase placeholder="Search..." /></Tearch>
                 <Icons >
                     <Badge badgeContent={4} color="error">

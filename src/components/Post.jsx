@@ -6,7 +6,7 @@ function Post() {
     const [value, setValue] = React.useState(1);
     return (
         <div>
-            <Card sx={{ maxWidth: {xs:340, sm:"100%"}, margin:"25px" }}>
+            <Card sx={{ maxWidth: {xs:340, sm:"60%"}, margin:"25px" }}>
                 <CardHeader
                     // avatar={
                     //     <Avatar sx={{ bgcolor: "red" }} aria-label="recipe">

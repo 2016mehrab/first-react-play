@@ -7,7 +7,7 @@ import Post from './Post';
 const Feed = () => {
 
     return (
-        <Box p={2} sx={{ flex: { xs: 1, sm: 4 } }}>
+        <Box p={2} sx={{ flex: { xs: 1, sm: 5 } }}>
             <Post/>
             <Post/>
             <Post/>
