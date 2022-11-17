@@ -72,8 +72,8 @@ const Navbar = () => {
                 </UserBox>
             </StyledToolbar>
             <Menu
-                id="demo-positioned-menu"
-                aria-labelledby="demo-positioned-button"
+                // id="demo-positioned-menu"
+                // aria-labelledby="demo-positioned-button"
 
                 open={open}
                 onClose={ e=> setOpen(false)}
