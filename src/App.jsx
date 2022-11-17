@@ -7,23 +7,18 @@ import { theme } from "./theme";
 
 function App() {
   //custom emotion component
-  const BlueButton = styled(Button)(({theme})=>({
+  // const BlueButton = styled(Button)(({theme})=>({
 
-    backgroundColor: theme.palette.teal.main,
-    color: "#888", margin: 5,
-    "&:hover": { backgroundColor: "lightblue" },
-    "&:disabled": { backgroundColor: "gray", color: "white" }
-  }))
+  //   backgroundColor: theme.palette.teal.main,
+  //   color: "#888", margin: 5,
+  //   "&:hover": { backgroundColor: "lightblue" },
+  //   "&:disabled": { backgroundColor: "gray", color: "white" }
+  // }))
 
   return (
     <div>
-      <Button variant="text">Text</Button>
-      <Button startIcon={<DeleteForever />}
-        variant="contained"
-        color="teal"
-        size="small">Contained</Button>
-      <Button  variant="outlined">Outlined</Button>
-      <BlueButton>Kill it</BlueButton>
+      
+      {/* <BlueButton>Kill it</BlueButton> */}
     </div>
   )
 }
