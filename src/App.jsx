@@ -10,6 +10,7 @@ import { Container, Stack } from "@mui/system";
 import { teal } from "@mui/material/colors";
 import Navbar from "./components/Navbar";
 import Add from "./components/Add";
+import { useRef } from "react";
 
 function App() {
   //custom emotion component
@@ -26,6 +27,7 @@ function App() {
       mode:mode 
     },
   });
+
 
   return (
     <div>
