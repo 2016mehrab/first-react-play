@@ -11,7 +11,7 @@ const StyledToolbar = styled(Toolbar)({
 })
 
 const Tearch = styled("div")(({ theme }) => ({
-    backgroundColor: "white",
+    backgroundColor: theme.palette.mode==="light"?"white":"black",
     padding: "0 10px",
     borderRadius: theme.shape.borderRadius,
     width: "40%",
@@ -43,14 +43,14 @@ const handleClose = () => {
 
 };
 
-const Navbar = () => {
+const Navbar = ({mode, setMode}) => {
     const [open, setOpen] = useState(false);
     return (
         <AppBar position="sticky">
             <StyledToolbar>
                 <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>StickyChan</Typography>
                 <DeblurIcon sx={{ display: { xs: "block", sm: "none" } }} />
-                <Tearch><InputBase placeholder="Search..." /></Tearch>
+                <Tearch ><InputBase  placeholder="Search..." /></Tearch>
                 <Icons >
                     <Badge badgeContent={4} color="error">
                         <MailIcon />

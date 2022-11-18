@@ -4,7 +4,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import { Home, ContactPage, Group, Info, ModeNight, Mode } from '@mui/icons-material';
 
 
-const Sidebar = () => {
+const Sidebar = ({mode, setMode}) => {
     const [checked, setChecked] = useState(true);
     const handleChange = (event) => {
         setChecked(event.target.checked);
@@ -52,9 +52,7 @@ const Sidebar = () => {
                                 <ModeNight />
                             </ListItemIcon>
                             <Switch
-                                checked={checked}
-                                onChange={handleChange}
-                                inputProps={{ 'aria-label': 'controlled' }}
+                                onChange={e=>setMode(mode==="light" ? "dark":"light")}
                             />
                         </ListItemButton>
                     </ListItem>

@@ -20,7 +20,7 @@ function App() {
   //   "&:hover": { backgroundColor: "lightblue" },
   //   "&:disabled": { backgroundColor: "gray", color: "white" }
   // }))
-  const [mode, setMode] = useState("dark");
+  const [mode, setMode] = useState("light");
   const darkTheme = createTheme({
     palette: {
       mode:mode 
@@ -32,9 +32,9 @@ function App() {
       <ThemeProvider theme={darkTheme}>
         <Box bgcolor={"background.default"} color="text.primary">
           {/* navbar */}
-          <Navbar />
+          <Navbar setMode={setMode} mode={mode} />
           <Stack direction="row" spacing={3} justifyContent="space-between">
-            <Sidebar />
+            <Sidebar setMode={setMode} mode={mode} />
             <Feed />
             <Rightbar />
           </Stack>
