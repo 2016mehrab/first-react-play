@@ -9,6 +9,7 @@ import Feed from "./components/Feed";
 import { Container, Stack } from "@mui/system";
 import { teal } from "@mui/material/colors";
 import Navbar from "./components/Navbar";
+import Add from "./components/Add";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Feed />
           <Rightbar />
         </Stack>
+        <Add/>
       </Box>
 
 
