@@ -35,7 +35,7 @@ function Add() {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box bgcolor="white" width={400} height={280} p={3} borderRadius={5}>
+        <Box bgcolor={"background.default"} color="text.primary" width={400} height={280} p={3} borderRadius={5}>
           <Typography variant="h6" textAlign="center">
             Sign in
           </Typography>
